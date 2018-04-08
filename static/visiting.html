@@ -41,32 +41,44 @@
                 <tr>
                   <th><a href="#">#</a></th>
                   <th>Студент</th>
-                    {% for i in "x"|ljust:"31" %}
-                       <th> {{ forloop.counter }} </th>
-                    {% endfor %}
+                  <script>
+                      for (var i=1;i < 32;i+=1)
+                      {
+                        document.write("<th>"+i+"</th>")
+                      }
+                  </script>
                 </tr>
               </thead>
               <tbody>
                  <tr>
                      <td>1</td>
                      <td>Костирка Віталій</td>
-                     {% for in "x"|ljust:"31" %}
-                     <td><input type="checkbox"/></td>
-                     {% endfor %}
+                     <script>
+                      for (var i=1;i < 32;i+=1)
+                      {
+                        document.write("<td><input type=\"checkbox\"</td>")
+                      }
+                      </script>
                  </tr>
                  <tr>
                      <td>2</td>
                      <td>Марків Олег</td>
-                     {% for in "x"|ljust:"31" %}
-                     <td><input type="checkbox"/></td>
-                     {% endfor %}
+                     <script>
+                      for (var i=1;i < 32;i+=1)
+                      {
+                        document.write("<td><input type=\"checkbox\"</td>")
+                      }
+                      </script>
                  </tr>
                  <tr>
                      <td>3</td>
                      <td>Дудар Юра</td>
-                     {% for i in "x"|ljust:"31" %}
-                     <td><input type="checkbox"></td>
-                     {% endfor %}
+                     <script>
+                      for (var i=1;i < 32;i+=1)
+                      {
+                        document.write("<td><input type=\"checkbox\"</td>")
+                      }
+                      </script>
                  </tr>
               </tbody>
             </table>
