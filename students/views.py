@@ -55,8 +55,8 @@ def students_list(request):
 
 def visiting(request):
     return render(request, 'students/visiting.html', {})
-def visiting(request):
-    month=()
-    for i in range(31):
-        month[i]=i+1
-    return render(request, 'students/visiting.html', {'month': month})
+# def visiting(request):
+#     month=()
+#     for i in range(31):
+#         month[i]=i+1
+#     return render(request, 'students/visiting.html', {'month': month})

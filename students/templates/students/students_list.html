@@ -12,15 +12,7 @@
  <body>
    <div class="container">
     {% include 'students/includes/header.html' %}
-    <div class="row" id="sub-header">
-        <div class="col-xs-12">
-         <ul class="nav nav-tabs" role="tablist">
-             <li role="presentation" class="active"><a href="{% url 'home' %}">Студенти</a></li>
-             <li role="presentation"><a href="{% url 'visit '%}">Відвідування</a></li>
-             <li role="presentation"><a href="{% url 'groups' %}">Групи</a></li>
-         </ul>
-        </div>
-    </div>
+    {% include 'students/includes/main_navigation.html' %}
     <div class="row" id="content-columns">
         <div class="col-xs-12" id="content-column">
             <div class="alert alert-warning">Зміни Скасовано</div>
@@ -72,6 +64,7 @@
             </nav>
         </div>
     </div>
+
     {% include 'students/includes/footer.html' %}
    </div>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
